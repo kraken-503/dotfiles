@@ -55,3 +55,6 @@ hl.window_rule({
   float = true,
   size = {642,788},
 })
+
+--Matuwall blur
+hl.layer_rule({ match = { namespace = "matuwall" }, blur = true, ignore_alpha = 0.5, })

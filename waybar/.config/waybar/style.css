@@ -2,17 +2,14 @@
   min-height: 0;
   min-width: 0;
   font-family: "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP", "Noto Sans CJK KR";
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 window#waybar {
   transition-property: background-color;
   transition-duration: 0.5s;
-  /* background-color: #1e1e2e; */
-  /* background-color: #181825; */
   background-color: #11111b;
-  /* background-color: rgba(24, 24, 37, 0.6); */
   background: transparent;
   opacity: 0.95;
 }
@@ -21,10 +18,10 @@ window#waybar {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  /* background-color: #181825; */
   background-color: #1e1e2e;
   color: #d5e0e2;
-  border-radius: 13px;
+  border-radius: 25px;
+  min-width: 20px;
   transition: all 150ms ease-in-out;
 }
 
@@ -36,7 +33,7 @@ window#waybar {
 #workspaces button.active {
   background-color: #1e1e2e;
   color: #97b2b7;
-  min-width: 25px;
+  min-width: 50px;
 }
 
 #workspaces button.urgent {
@@ -130,6 +127,7 @@ tooltip {
   border-radius: 13px;
 }
 #cava {
+  min-width: 2px;
   color: #b3b8c9;
   margin: 0 12px;
   letter-spacing: 3px;

@@ -82,3 +82,9 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 
 --DAMX(Nitrosense/Acer-div)
 hl.bind("XF86Presentation",  hl.dsp.exec_cmd("DAMX"))
+
+--Amberol
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("amberol"))
+
+-- Waybar Reload
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("pkill -9 waybar && waybar &"))

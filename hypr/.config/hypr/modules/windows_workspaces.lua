@@ -53,5 +53,5 @@ hl.window_rule({
   name = "Amberol",
   match = {class = "io.bassi.Amberol" },
   float = true,
-  size = {561,660},
+  size = {642,788},
 })

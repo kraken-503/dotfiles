@@ -38,8 +38,8 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    height:                      400px; 
-    width:                       400px;
+    height:                      600px; 
+    width:                       700px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -47,7 +47,7 @@ window {
     enabled:                     true;
     border-radius:               20px;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            #141313;
 }
 
 /*****----- Main Box -----*****/

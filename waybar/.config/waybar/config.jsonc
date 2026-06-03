@@ -87,6 +87,7 @@
     },
   },
   "tray": {
+    "spacing": 5,
     "tooltip": true,
     "tooltip-format": "Networks",
   },

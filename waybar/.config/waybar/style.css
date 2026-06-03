@@ -136,6 +136,8 @@ tooltip {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   margin-right: 8px;
-  border-radius: 16px;
+  border-radius: 14px;
   background-color: #1e1e2e;
+}
+#tray{
 }

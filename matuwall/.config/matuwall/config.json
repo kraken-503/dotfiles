@@ -9,7 +9,7 @@
     "window_grid_rows": 3,
     "window_grid_max_width_pct": 80,
     "mouse_enabled": false,
-    "keep_ui_alive": false
+    "keep_ui_alive": true
   },
   "matugen": {
     "matugen_mode": "dark",

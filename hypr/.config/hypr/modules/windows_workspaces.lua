@@ -2,11 +2,6 @@
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
 
--- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/
--- and https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
-
--- Example window rules that are useful
-
 local suppressMaximizeRule = hl.window_rule({
     -- Ignore maximize requests from all apps. You'll probably like this.
     name  = "suppress-maximize-events",
@@ -17,7 +12,6 @@ local suppressMaximizeRule = hl.window_rule({
 -- suppressMaximizeRule:set_enabled(false)
 
 hl.window_rule({
-    -- Fix some dragging issues with XWayland
     name  = "fix-xwayland-drags",
     match = {
         class      = "^$",
@@ -31,14 +25,6 @@ hl.window_rule({
     no_focus = true,
 })
 
--- Layer rules also return a handle.
--- local overlayLayerRule = hl.layer_rule({
---     name  = "no-anim-overlay",
---     match = { namespace = "^my-overlay$" },
---     no_anim = true,
--- })
--- overlayLayerRule:set_enabled(false)
-
 -- Hyprland-run windowrule
 hl.window_rule({
     name  = "move-hyprland-run",
@@ -47,14 +33,23 @@ hl.window_rule({
     float = true,
 })
 
-
 --Amberol float
 hl.window_rule({
   name = "Amberol",
   match = {class = "io.bassi.Amberol" },
   float = true,
   size = {642,788},
+  animation = "popin",
 })
 
 --Matuwall blur
 hl.layer_rule({ match = { namespace = "matuwall" }, blur = true, ignore_alpha = 0.5, })
+
+--file picker centering float
+hl.window_rule({
+  name      = "file-picker",
+  match     = { class = "xdg-desktop-portal-gtk" },
+  move      = {504, 239},
+  size      = {946,593},
+  animation = "popin",
+})

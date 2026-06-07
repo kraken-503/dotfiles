@@ -6,10 +6,12 @@
         <img alt="Static Badge" src="https://img.shields.io/badge/WM-Hyprland-blue?style=for-the-badge&color=8D65F7">
         <img alt="Static Badge" src="https://img.shields.io/badge/Bar-Waybar-blue?style=for-the-badge&color=8D65F7">
         <img alt="Static Badge" src="https://img.shields.io/badge/NC-Dunst-blue?style=for-the-badge&color=8D65F7">
-        <img alt="Static Badge" src="https://img.shields.io/badge/fetch-Fastfetch-blue?style=for-the-badge&color=8D65F7"><br>
-        <img alt="Static Badge" src="https://img.shields.io/badge/Shell-ZSH-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/fetch-Fastfetch-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Shell-ZSH-blue?style=for-the-badge&color=8D65F7"><br>
         <img alt="Static Badge" src="https://img.shields.io/badge/Editor-Neovim-blue?style=for-the-badge&color=8D65F7">
         <img alt="Static Badge" src="https://img.shields.io/badge/Menu-Rofi-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Terminal-Kitty-blue?style=for-the-badge&color=8D65F7">
+
         
 </p>
 <br><br>
@@ -29,7 +31,7 @@
     <td><img src="https://github.com/user-attachments/assets/e7745008-9267-4ddf-ab57-134f81d62b3e" width="660" alt="Screen 3"></td>
   </tr> 
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3" alt="Screen 3"></td>
+    <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3"  width="660" alt="Screen 3"></td>
   </tr>
 </table>
 

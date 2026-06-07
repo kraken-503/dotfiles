@@ -1,17 +1,14 @@
-<img width="1920" height="1080" alt="Screenshot-2026-06-07_11:13:20" src="https://github.com/user-attachments/assets/d5dc3d5f-163a-4884-bc74-c53a07a2650e" />
+
 <br><br>
-
-<img width="1920" height="1080" alt="Screenshot-2026-06-07_11:15:28" src="https://github.com/user-attachments/assets/c41eff4b-a5d7-41db-b4e8-bfa29d7bd44b" />
-<br><br>
-
-<img width="1920" height="1080" alt="Screenshot-2026-06-07_12:47:44" src="https://github.com/user-attachments/assets/07f8a901-ddd2-46da-b3db-c8e0c2f3f979" />
-<br><br>
-
-<img width="1920" height="1080" alt="Screenshot-2026-06-07_12:49:37" src="https://github.com/user-attachments/assets/4bd01e94-f687-45c5-9603-220b0330b06b" />
-<br><br>
-
-<img width="1920" height="1080" alt="Screenshot-2026-06-07_12:50:12" src="https://github.com/user-attachments/assets/c5c01fcf-ddac-4eed-aa49-f4a897900ce3" />
-<br><br>
-
-<img width="1920" height="1080" alt="Screenshot-2026-06-07_12:51:14" src="https://github.com/user-attachments/assets/6a07f69d-2c56-4d04-a10b-1fccc86fd321" />
-
+<p align="center">
+        <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Parisienne&size=128&duration=4000&pause=200&color=8D65F7&center=true&vCenter=true&width=920&height=200&lines=dotfiles" alt="Typing SVG" /></a>
+  <br>
+        <img alt="Static Badge" src="https://img.shields.io/badge/WM-Hyprland-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Bar-Waybar-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/NC-Dunst-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/fetch-Fastfetch-blue?style=for-the-badge&color=8D65F7"><br>
+        <img alt="Static Badge" src="https://img.shields.io/badge/Shell-ZSH-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Editor-Neovim-blue?style=for-the-badge&color=8D65F7">
+        <img alt="Static Badge" src="https://img.shields.io/badge/Menu-Rofi-blue?style=for-the-badge&color=8D65F7">
+        
+</p>

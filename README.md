@@ -1,4 +1,3 @@
-
 <br><br>
 <p align="center">
         <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Parisienne&size=128&duration=4000&pause=200&color=8D65F7&center=true&vCenter=true&width=920&height=200&lines=dotfiles" alt="Typing SVG" /></a>
@@ -11,29 +10,51 @@
         <img alt="Static Badge" src="https://img.shields.io/badge/Editor-Neovim-blue?style=for-the-badge&color=8D65F7">
         <img alt="Static Badge" src="https://img.shields.io/badge/Menu-Rofi-blue?style=for-the-badge&color=8D65F7">
         <img alt="Static Badge" src="https://img.shields.io/badge/Terminal-Kitty-blue?style=for-the-badge&color=8D65F7">
-
-        
 </p>
 <br><br>
 <br><br>
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=30&duration=1&color=8D65F7&multiline=true&repeat=false&width=789&lines=Gallery" alt="Typing SVG" /></a>
 <br>
- <table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/fd12cfd1-ccca-4f7a-8483-7a2f9d82f054" width="660" alt="Screen 1"></td>
-  </tr>
-         
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/5fbb0b0b-7a26-403b-a9e1-ada68f28cfe1" width="660" alt="Screen 2"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/e7745008-9267-4ddf-ab57-134f81d62b3e" width="660" alt="Screen 3"></td>
-  </tr> 
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3"  width="660" alt="Screen 3"></td>
-  </tr>
-</table>
+
+<details>
+<summary><b>View Gallery</b></summary>
+<br>
+  
+  <table align="center">
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/fd12cfd1-ccca-4f7a-8483-7a2f9d82f054" width="660" alt="Screen 1"></td>
+    </tr>      
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/5fbb0b0b-7a26-403b-a9e1-ada68f28cfe1" width="660" alt="Screen 2"></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/e7745008-9267-4ddf-ab57-134f81d62b3e" width="660" alt="Screen 3"></td>
+    </tr> 
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3" width="660" alt="Screen 4"></td>
+    </tr>
+  </table>
+
+</details>
+
+<br><br>
+## Dependencies
+<code>
+kitty matuwall cava hypland waybar 
+</code>
+
+> [!NOTE]
+> * Dotfiles are managed using GNU Stow.
+> * There is no installation script, you just need to copy each config directory to <code>~/.config/</code>
+
+<br><br>
+
+### ⚙️ Chores/planned features
+- [x] Integrate cava module to waybar.
+- [ ] installation script.
+- [ ] gamemode switcher in waybar.
+- [ ] matugen based theme switcher.
 
 <br><br>
 

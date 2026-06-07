@@ -35,27 +35,30 @@
       <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3" width="660" alt="Screen 4"></td>
     </tr>
   </table>
-
 </details>
 
 <br><br>
 ## Dependencies
-<code>
-kitty matuwall cava hypland waybar 
-</code>
 
-> [!NOTE]
-> * Dotfiles are managed using GNU Stow.
-> * There is no installation script, you just need to copy each config directory to <code>~/.config/</code>
+```bash
+kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv 
+```
 
 <br><br>
 
-### ⚙️ Chores/planned features
+> [!NOTE]
+> * Dotfiles are managed using GNU Stow.
+> * There is no installation script atm, you just need to copy each config directory to <code>~/.config/</code>
+> * Media Player - mpv
+> * Music Player - amberol
+
+<br><br>
+
+### ⚙️ To-do / planned features
 - [x] Integrate cava module to waybar.
 - [ ] installation script.
 - [ ] gamemode switcher in waybar.
 - [ ] matugen based theme switcher.
-
 <br><br>
 
 <p align="center">

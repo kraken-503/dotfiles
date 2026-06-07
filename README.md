@@ -17,7 +17,7 @@
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=30&duration=1&color=8D65F7&multiline=true&repeat=false&width=789&lines=Gallery" alt="Typing SVG" /></a>
 <br>
- <table align="left">
+ <table>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/fd12cfd1-ccca-4f7a-8483-7a2f9d82f054" width="660" alt="Screen 1"></td>
   </tr>
@@ -26,7 +26,11 @@
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/e7745008-9267-4ddf-ab57-134f81d62b3e" width="660" alt="Screen 3"></td>
-  </tr>
-         
+  </tr> 
 </table>
 
+<br><br>
+
+<p align="center">
+  <em>Made with ❤️ by kraken-503</em>
+</p>

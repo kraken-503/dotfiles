@@ -1,8 +1,0 @@
-require("modules.autostart")
-require("modules.env")
-require("modules.input")
-require("modules.keybinds")
-require("modules.looks")
-require("modules.misc")
-require("modules.monitors")
-require("modules.windows_workspaces")

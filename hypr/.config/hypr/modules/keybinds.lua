@@ -117,5 +117,5 @@ hl.bind(mainMod .. " + Print ", hl.dsp.exec_cmd('grim - | wl-copy && wl-paste > 
 
 -- KDE Connect
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd('kdeconnect-app & kdeconnect-indicator'))
-hl.bind(mainMod .. " + SHIFT + K", hl.dsp.exec_cmd('pkill -9 kdeconnect-indi'))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.exec_cmd('pkill -9 kdeconnect-app & pkill -9 kdeconnect-indi'))
 

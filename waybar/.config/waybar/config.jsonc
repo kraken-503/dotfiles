@@ -92,10 +92,12 @@
     "tooltip-format": "Networks",
   },
   "custom/skull": {
-    "format": "",
+    "exec": "~/.config/waybar/scripts/gamemode-toggle.sh status",
+    "on-click": "~/.config/waybar/scripts/gamemode-toggle.sh toggle && pkill -SIGUSR2 waybar",
+    "interval": 5,
+    "return-type": "json",
     "tooltip": true,
-    "tooltip-format": "v3nom01",
-    "on-click": "~/.config/rofi/launchers/type-7/launcher.sh",
+    "format": " {text}",
   },
   "backlight": {
     "device": "intel_backlight",

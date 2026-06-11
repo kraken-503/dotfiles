@@ -133,10 +133,9 @@ tooltip {
   letter-spacing: 3px;
 }
 #custom-skull {
-  padding: 0.3rem 0.6rem;
-  margin: 0.4rem 0.25rem;
-  margin-right: 8px;
-  border-radius: 14px;
+  padding: 0.3rem 0.7rem 0.3rem 0.94rem; 
+  margin: 0.4rem 0.4rem;
+  border-radius: 23px;
   background-color: #1e1e2e;
 }
 #tray{

@@ -19,53 +19,53 @@
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+      "format": "\u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m"
     },
     "break",
     {
       "type": "os",
       "key": " ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
     {
       "type": "kernel",
       "key": " ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
     {
       "type": "shell",
       "key": " ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
     {
       "type": "wm",
       "key": " ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
      {
       "type": "packages",
       "key": " ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
     {
       "type": "uptime",
       "key": " ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
     {
       "type": "cpu",
       "key": "󰻠 ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
     {
       "type": "gpu",
       "key": " ",
-      "keyColor": "34"
+      "keyColor": "37"
     },
     "break",
     {
       "type": "custom",
-      "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m"
+      "format": "\u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m  \u001b[90m  \u001b[37m"
     },
     "break",
     "break"

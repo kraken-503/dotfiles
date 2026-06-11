@@ -57,7 +57,7 @@ kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv
 ### ⚙️ To-do / planned features
 - [x] Integrate cava module to waybar.
 - [ ] installation script.
-- [ ] gamemode switcher in waybar.
+- [x] gamemode switcher in waybar.
 - [ ] matugen based theme switcher.
 <br><br>
 

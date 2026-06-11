@@ -122,3 +122,6 @@ hl.bind(mainMod .. " + SHIFT + K", hl.dsp.exec_cmd('pkill -9 kdeconnect-app & pk
 --Hyprlock/hypridle
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd('hyprlock'))
 
+--Hyprland reload
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.exec_cmd('hyprctl reload'))
+

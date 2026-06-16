@@ -1,6 +1,6 @@
 <br><br>
 <p align="center">
-        <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Parisienne&size=128&duration=4000&pause=200&color=8D65F7&center=true&vCenter=true&width=920&height=200&lines=dotfiles" alt="Typing SVG" /></a>
+        <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Parisienne&size=190&duration=4000&pause=200&color=8D65F7&center=true&vCenter=true&width=980&height=225&lines=dotfiles" alt="Typing SVG" /></a>
   <br>
         <img alt="Static Badge" src="https://img.shields.io/badge/WM-Hyprland-blue?style=for-the-badge&color=8D65F7">
         <img alt="Static Badge" src="https://img.shields.io/badge/Bar-Waybar-blue?style=for-the-badge&color=8D65F7">
@@ -14,7 +14,7 @@
 <br><br>
 <br><br>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=30&duration=1&color=8D65F7&multiline=true&repeat=false&width=300&height=100&lines=Gallery" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=30&duration=1&color=8D65F7&multiline=true&repeat=false&width=294&height=80&lines=Gallery" alt="Typing SVG" /></a>
 <br>
 
 <details>

@@ -57,6 +57,7 @@ kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv hyprlock oh
 > * For hyprlock to work properly, you need to have <code>Anurati</code> font installed.
 > * Media Player - mpv
 > * Music Player - amberol
+> * Neovim - NvChad
 
 <br><br>
 

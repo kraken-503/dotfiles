@@ -35,16 +35,18 @@
       <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3" width="660" alt="Screen 4"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/7398dc30-e89e-4a4e-a47a-d3b0fba4cf81" width="660" alt="Screen 4"></td>
+      <td><img src="https://github.com/user-attachments/assets/7398dc30-e89e-4a4e-a47a-d3b0fba4cf81" width="660" alt="Screen 5"></td>
     </tr>
   </table>
 </details>
+
+[![Gamemode Showcase](Gamemode Showcase)](https://github.com/user-attachments/assets/0f0126c6-9abb-4106-9d1e-6748444b00e8)
 
 <br><br>
 ## Dependencies
 
 ```bash
-kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv hyprlock 
+kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv hyprlock oh-my-zsh
 ```
 
 <br><br>
@@ -52,6 +54,7 @@ kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv hyprlock
 > [!NOTE]
 > * Dotfiles are managed using GNU Stow.
 > * There is no installation script atm, you just need to copy each config directory to <code>~/.config/</code>
+> * For hyprlock to work properly, you need to have <code>Anurati</code> font installed.
 > * Media Player - mpv
 > * Music Player - amberol
 

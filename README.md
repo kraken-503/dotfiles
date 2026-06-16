@@ -14,7 +14,7 @@
 <br><br>
 <br><br>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=80&duration=1&color=8D65F7&multiline=true&repeat=false&width=150&height=100&lines=Gallery" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=30&duration=1&color=8D65F7&multiline=true&repeat=false&width=300&height=100&lines=Gallery" alt="Typing SVG" /></a>
 <br>
 
 <details>

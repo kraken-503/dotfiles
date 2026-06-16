@@ -14,7 +14,7 @@
 <br><br>
 <br><br>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=30&duration=1&color=8D65F7&multiline=true&repeat=false&width=789&lines=Gallery" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=80&duration=1&color=8D65F7&multiline=true&repeat=false&width=450&height=100&lines=Gallery" alt="Typing SVG" /></a>
 <br>
 
 <details>
@@ -34,6 +34,9 @@
     <tr>
       <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3" width="660" alt="Screen 4"></td>
     </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/7398dc30-e89e-4a4e-a47a-d3b0fba4cf81" width="660" alt="Screen 4"></td>
+    </tr>
   </table>
 </details>
 
@@ -41,7 +44,7 @@
 ## Dependencies
 
 ```bash
-kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv 
+kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv hyprlock 
 ```
 
 <br><br>

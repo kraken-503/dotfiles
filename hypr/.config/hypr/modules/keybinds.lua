@@ -81,13 +81,13 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 --DAMX(Nitrosense/Acer-div)
-hl.bind("XF86Presentation",  hl.dsp.exec_cmd("DAMX"))
+hl.bind("+ SHIFT + XF86Presentation",  hl.dsp.exec_cmd("DAMX"))
 
 --Amberol
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("amberol"))
 
 -- Waybar Reload
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("pkill -9 waybar && waybar &"))
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("pkill -9 waybar && waybar &"))
 
 --Window Switching(Alt+TAB)
 hl.bind("SUPER + tab", function ()
@@ -125,3 +125,30 @@ hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd('hyprlock'))
 --Hyprland reload
 hl.bind(mainMod .. " + SHIFT + H", hl.dsp.exec_cmd('hyprctl reload'))
 
+--Glass magnifier zoom 
+local MAX_ZOOM = 3
+local MIN_ZOOM = 1
+local ZOOM_TOGGLE_FACTOR = 1.5
+
+---@param offset number
+---@return nil
+local function zoom(offset)
+    local current = hl.get_config("cursor.zoom_factor")
+    if offset ~= nil then
+        current = current + offset
+    elseif current ~= MIN_ZOOM then
+        current = MIN_ZOOM
+    else
+        current = ZOOM_TOGGLE_FACTOR
+    end
+    current = math.max(MIN_ZOOM, math.min(MAX_ZOOM, current))
+    hl.config({ cursor = { zoom_factor = current } })
+end
+
+hl.bind("SUPER + SHIFT + Z", zoom)
+hl.bind("SUPER + KP_ADD", function()
+    zoom(0.5)
+end)
+hl.bind("SUPER + KP_Subtract", function()
+    zoom(-0.5)
+end)

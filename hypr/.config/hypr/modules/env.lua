@@ -31,3 +31,7 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt5ct")
 --Nvidia
 hl.env("LIBVA_DRIVER_NAME", "nvidia")
 hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+
+--wayland
+hl.env("WAYLAND_DISPLAY","wayland-0")
+

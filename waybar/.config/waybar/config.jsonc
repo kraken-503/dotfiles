@@ -61,7 +61,8 @@
       "default": ["", ""],
     },
     "scroll-step": 1,
-    "on-click": "pavucontrol",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
     "ignored-sinks": ["Easy Effects Sink"],
   },
   "clock": {

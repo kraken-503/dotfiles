@@ -10,7 +10,8 @@ get_status() {
 }
 
 hypr_performance_on() {
-hyprctl eval 'hl.config({
+hyprctl eval '
+  hl.config({
     animations = { enabled = false },
     decoration = {
         rounding = 0,
@@ -22,7 +23,12 @@ hyprctl eval 'hl.config({
         gaps_out = 0,
         border_size = 1
     }
-})'
+})
+  hl.monitor({
+    output = "eDP-1",
+    mode = "1920x1080@165",
+    position = "0x0",
+    scale = 1 })'
 }
 
 hypr_performance_off() {

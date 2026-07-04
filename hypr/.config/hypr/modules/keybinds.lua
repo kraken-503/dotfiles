@@ -81,7 +81,7 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 --DAMX(Nitrosense/Acer-div)
-hl.bind("+ SHIFT + XF86Presentation",  hl.dsp.exec_cmd("DAMX"))
+hl.bind("XF86Launch7",  hl.dsp.exec_cmd("DAMX"))
 
 --Amberol
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("amberol"))

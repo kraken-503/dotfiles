@@ -37,6 +37,9 @@
     <tr>
       <td><img src="https://github.com/user-attachments/assets/7398dc30-e89e-4a4e-a47a-d3b0fba4cf81" width="660" alt="Screen 5"></td>
     </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/0b9d5882-f615-43bc-bfb5-f917d27aa357" width="660" alt="Screen 5"></td>
+    </tr>
   </table>
 </details>
 

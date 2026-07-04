@@ -6,7 +6,7 @@
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "nemo"
-local menu        = "~/.config/rofi/launchers/type-7/launcher.sh"
+local menu        = "~/.config/rofi/launcher.sh"
 
 
 ---- KEYBINDINGS ----

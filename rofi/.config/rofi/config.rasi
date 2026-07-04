@@ -43,11 +43,11 @@ configuration {
 		fallback-icon: "application-x-addon";
 	}
 
-	/*---------- Window switcher settings ----------*/
-	window-match-fields: "title,class,role,name,desktop";
-	window-command: "wmctrl -i -R {window}";
-	window-format: "{w} - {c} - {t:0}";
-	window-thumbnail: false;
+  /*---------- Window switcher settings ----------*/
+  window-match-fields: "title,class";
+  window-command: "true"; 
+  window-format: "{c} · {t}";
+  window-thumbnail: false;
 
 	/*---------- History and Sorting ----------*/
 	disable-history: false;
@@ -69,7 +69,7 @@ configuration {
 	font: "Mono 12";
 	sort: false;
 	threads: 0;
-	click-to-exit: true;
+	click-to-exit: false;
 
 	/*---------- File browser settings ----------*/
     filebrowser {

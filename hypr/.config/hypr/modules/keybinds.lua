@@ -111,9 +111,8 @@ hl.bind("SUPER + tab", function ()
 end)
 
 --Screenshot
-hl.bind(mainMod .. " + SHIFT+ Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot-$(date +%F_%T).png | notify-send "Screenshot of the region taken" -t 2000'))
-
-hl.bind(mainMod .. " + Print ", hl.dsp.exec_cmd('grim - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot-$(date +%F_%T).png | notify-send "Screenshot of whole screen taken" -t 2000'))
+hl.bind("+ SUPER + SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m region -o ~/Pictures/Screenshots/ "))
+hl.bind("+ SUPER + Print", hl.dsp.exec_cmd("hyprshot -m output -m eDP-1 -o ~/Pictures/Screenshots/ "))
 
 -- KDE Connect
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd('kdeconnect-app & kdeconnect-indicator'))

@@ -8,7 +8,6 @@ local terminal    = "kitty"
 local fileManager = "nemo"
 local menu        = "~/.config/rofi/launcher.sh"
 
-
 ---- KEYBINDINGS ----
 ---------------------
 
@@ -37,11 +36,9 @@ hl.bind(mainMod .. " + SHIFT + Left", hl.dsp.window.move({ direction = "left" })
 hl.bind(mainMod .. " + SHIFT + Up", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + Down", hl.dsp.window.move({ direction = "down" }))
 
-
 --Fullscreen/Maximized Window
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized"}, {action = "toggle" }))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen"}, {action = "toggle" }))
-
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]

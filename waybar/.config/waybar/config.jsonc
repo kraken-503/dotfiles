@@ -110,14 +110,16 @@
   "mpris": {
     "format": "{player_icon} {title} - {artist}",
     "format-paused": "{status_icon} {title} - {artist}",
+    "max-length": 40, 
+    "ellipsis": "…",  
     "player-icons": {
-      "default": "▶",
-      "mpv": "🎵",
-    },
+        "default": "▶",
+        "mpv": "󰎁",
+        "zen": "󰖟"      },
     "status-icons": {
-      "paused": "󰏤",
+        "paused": "󰏤"
     },
-  },
+},
   "hyprland/workspaces": {
     "format": "{icon}",
     "format-icons": {

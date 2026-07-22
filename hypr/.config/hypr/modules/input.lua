@@ -26,19 +26,19 @@ hl.gesture({
     action = "workspace"
 })
 
--- finger screenshot gesture
+-- 3 finger gesture for screenshot
+
 hl.gesture({
-    fingers = 3,
-    direction = "down",
-    action = function()
-      hl.exec_cmd("hyprshot -m output -m eDP-1 -o ~/Pictures/Screenshots/")
-    end
+  fingers = 3,
+  direction = "down",
+  action = function()
+    hl.exec_cmd("hyprshot -m output -m eDP-1 -o ~/Pictures/Screenshots/")
+  end
 })
+
 -- Example per-device config
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
 --hl.device({
 --    name        = "epic-mouse-v1",
 --    sensitivity = -0.5,
 --})
-
-

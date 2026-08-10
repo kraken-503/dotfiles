@@ -53,3 +53,12 @@ hl.window_rule({
   size      = {946,593},
   animation = "popin",
 })
+
+
+--hl.on("window.floating", function(event)
+ -- if event.floating == true and event.window.class == "mpv" then
+ --   hl.dispatch("resizewindowpixel", "exact 1280 720, address:" .. event.window.address)
+--    hl.dispatch("centerwindow", "address:" .. event.window.address)
+--  end
+--end)
+

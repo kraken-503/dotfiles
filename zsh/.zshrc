@@ -115,4 +115,7 @@ source $ZSH/oh-my-zsh.sh
 
 #Powersaver
 alias powersave="~/.config/hypr/scripts/battery-saver.sh"
+
+alias signal-desktop="signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop"
+
 export POWERLEVEL9K_DISABLE_GITSTATUS=true

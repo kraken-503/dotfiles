@@ -2,7 +2,8 @@
   min-height: 0;
   min-width: 0;
   font-family: "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP", "Noto Sans CJK KR";
-  font-size: 18px;
+  font-size: 16px;
+  border-radius: 20px;
   font-weight: 600;
 }
 
@@ -17,7 +18,6 @@ window#waybar {
 #workspaces button {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
-  border-radius: 6px;
   background-color: #1e1e2e;
   color: #d5e0e2;
   border-radius: 25px;
@@ -56,12 +56,11 @@ window#waybar {
 #mpris {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
-  border-radius: 12px;
   background-color: #1e1e2e;
 }
 
 #mpris.playing {
-  color: #c5e7bc;
+  color: #b4befe;
 }
 
 #mpris.paused {
@@ -128,7 +127,7 @@ tooltip {
 }
 #cava {
   min-width: 2px;
-  color: #b3b8c9;
+  color: #cdd6f4;
   margin: 0 12px;
   letter-spacing: 3px;
 }

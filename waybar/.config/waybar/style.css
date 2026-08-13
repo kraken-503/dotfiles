@@ -3,7 +3,7 @@
   min-width: 0;
   font-family: "JetBrainsMono Nerd Font Propo", "Noto Sans CJK JP", "Noto Sans CJK KR";
   font-size: 16px;
-  border-radius: 20px;
+  border-radius: 16px;
   font-weight: 600;
 }
 
@@ -130,6 +130,7 @@ tooltip {
   color: #cdd6f4;
   margin: 0 12px;
   letter-spacing: 3px;
+  font-size: 8px;
 }
 #custom-skull {
   padding: 0.3rem 0.7rem 0.3rem 0.94rem; 

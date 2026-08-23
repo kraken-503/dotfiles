@@ -54,6 +54,18 @@ hl.window_rule({
   animation = "popin",
 })
 
+--swayosd blur
+hl.layer_rule({
+    match = { namespace = "swayosd" },
+    blur = true,
+    ignore_alpha = 0.5,
+})
+
+hl.layer_rule({
+    match = { namespace = "gtk4-layer-shell" },
+    blur = true,
+    ignore_alpha= 0.5,
+})
 
 --hl.on("window.floating", function(event)
  -- if event.floating == true and event.window.class == "mpv" then

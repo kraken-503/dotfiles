@@ -1,0 +1,32 @@
+window#osd {
+    /* Use rgba or an alpha hex value so the background is see-through */
+    background: (30, 30, 46, 0.45); 
+    border: 1px solid rgba(49, 50, 68, 0.6);
+    border-radius: 20px;
+    padding: 12px 20px;
+}
+
+#container {
+    margin: 4px;
+}
+
+image, label {
+    color: #cdd6f4;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+}
+
+trough {
+    min-height: 6px;
+    min-width: 150px;
+    border-radius: 6px;
+    background: #313244;
+    border: none;
+}
+
+progress {
+    min-height: 6px;
+    border-radius: 6px;
+    background: #cba6f7;
+    border: none;
+}

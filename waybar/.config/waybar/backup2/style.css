@@ -99,11 +99,7 @@ window#waybar {
    letter-spacing: 3px;
    padding: 0 6px;
    font-size: 8px;
-   border-radius: 14px;
    font-family: monospace;
-}
-#cava, #cava label, #cava canvas {
-    border-radius: 8px;
 }
 
 #workspaces button label {

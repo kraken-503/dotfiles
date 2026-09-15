@@ -55,7 +55,7 @@ output() {
     status=$(get_status)
 
     if [ "$status" = "on" ]; then
-        echo '{"text": "󰊴", "tooltip": "Game Mode: ON\n\n• gamemoded \n• animations \n• blur \n• shadows \n\nClick to restore", "class": "gamemode-on", "percentage": 100}'
+        echo '{"text": " 󰊴", "tooltip": "Game Mode: ON\n\n• gamemoded \n• animations \n• blur \n• shadows \n\nClick to restore", "class": "gamemode-on", "percentage": 100}'
     else
         echo '{"text":"", "tooltip": "Game Mode: OFF\n\nClick to enable", "class": "gamemode-off", "percentage": 0}'
     fi

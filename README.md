@@ -27,22 +27,19 @@
   
   <table align="center">
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/fd12cfd1-ccca-4f7a-8483-7a2f9d82f054" width="660" alt="Screen 1"></td>
+      <td><img src="https://github.com/user-attachments/assets/572ccaa9-2731-49f6-9ac0-8857cf4cf95b" width="660" alt="Screen 1"></td>
     </tr>      
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/5fbb0b0b-7a26-403b-a9e1-ada68f28cfe1" width="660" alt="Screen 2"></td>
+      <td><img src="https://github.com/user-attachments/assets/0c877fc8-49bd-4b71-9eeb-9161401c0ded" width="660" alt="Screen 2"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/e7745008-9267-4ddf-ab57-134f81d62b3e" width="660" alt="Screen 3"></td>
+      <td><img src="https://github.com/user-attachments/assets/a5686f5d-794e-4dd1-82f5-931e6d7b0fd0" width="660" alt="Screen 3"></td>
     </tr> 
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/76d8a8a4-d9bf-4e2f-8028-a919fea2e2d3" width="660" alt="Screen 4"></td>
+      <td><img src="https://github.com/user-attachments/assets/1602a138-c613-429d-bcba-a7186a34411f" width="660" alt="Screen 4"></td>
     </tr>
     <tr>
       <td><img src="https://github.com/user-attachments/assets/7398dc30-e89e-4a4e-a47a-d3b0fba4cf81" width="660" alt="Screen 5"></td>
-    </tr>
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/0b9d5882-f615-43bc-bfb5-f917d27aa357" width="660" alt="Screen 5"></td>
     </tr>
   </table>
 </details>
@@ -74,6 +71,8 @@ kitty matuwall cava hypland waybar rofi fastfetch nvim zsh dunst mpv hyprlock oh
 - [x] gamemode switcher in waybar.
 - [ ] matugen based theme switcher.
 <br><br>
+
+
 
 <p align="center">
   <em>Made with ❤️ by kraken-503</em>

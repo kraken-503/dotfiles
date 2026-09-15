@@ -129,3 +129,9 @@ alias powersave="~/.config/hypr/scripts/battery-saver.sh"
 alias signal-desktop="signal-desktop --enable-features=UseOzonePlatform --ozone-platform=wayland --use-gl=desktop"
 
 export POWERLEVEL9K_DISABLE_GITSTATUS=true
+
+nvim() {
+    kitty @ set-spacing padding=0 2>/dev/null
+    command nvim "$@"
+    kitty @ set-spacing padding=0 2>/dev/null
+}

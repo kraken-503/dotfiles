@@ -116,3 +116,17 @@ window#waybar {
     background: #11111b;
     border-radius: 14px;
 }
+
+#custom-microphone {
+    font-size: 18px; 
+    padding: 0 5px;
+    transition: color 0.3s ease;
+}
+
+#custom-microphone.active {
+    color: #cdd6f4; 
+}
+
+#custom-microphone.muted {
+    color: #4D7C80; 
+}

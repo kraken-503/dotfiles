@@ -13,7 +13,8 @@
     ],
     "modules-center": [
         "clock",
-        "cava"
+        "cava",
+        "custom/microphone"
     ],
     "modules-right": [
         "backlight",
@@ -95,6 +96,12 @@
         "actions": {
             "on-click-right": "mode"
         },
+    },
+    "custom/microphone": {
+        "exec": "~/.config/waybar/scripts/mic-status.sh",
+        "return-type": "json",
+        "interval": 1,
+        "format": "{text}"
     },
 
     "backlight": {

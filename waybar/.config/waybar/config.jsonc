@@ -14,7 +14,8 @@
     "modules-center": [
         "clock",
         "cava",
-        "custom/microphone"
+        "custom/microphone",
+        "custom/obs"
     ],
     "modules-right": [
         "backlight",
@@ -103,6 +104,14 @@
         "interval": 1,
         "format": "{text}"
     },
+
+    "custom/obs": {
+    "exec": "~/.config/waybar/scripts/obs-status.sh",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{}",
+    "hide-empty-text": true
+  },
 
     "backlight": {
       "device": "intel_backlight",

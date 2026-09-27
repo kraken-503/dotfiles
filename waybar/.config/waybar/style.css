@@ -130,3 +130,19 @@ window#waybar {
 #custom-microphone.muted {
     color: #4D7C80; 
 }
+
+#custom-obs {
+    padding: 0 6px;
+    color: #a6adc8; 
+}
+
+#custom-obs.recording {
+    color: #f38ba8; 
+    animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}

@@ -35,14 +35,15 @@
     <tr>
       <td><img src="https://github.com/user-attachments/assets/a5686f5d-794e-4dd1-82f5-931e6d7b0fd0" width="660" alt="Screen 3"></td>
     </tr> 
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/1602a138-c613-429d-bcba-a7186a34411f" width="660" alt="Screen 4"></td>
+        <tr>
+      <td><img src="https://github.com/user-attachments/assets/be15d549-65e4-4e1e-ab9b-d0f3e74e5cf2" width="660" alt="Screen 4"></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/user-attachments/assets/7398dc30-e89e-4a4e-a47a-d3b0fba4cf81" width="660" alt="Screen 5"></td>
+      <td><img src="https://github.com/user-attachments/assets/5ca58b70-dee1-4f0b-b837-8761aa014695" width="660" alt="Screen 5"></td>
     </tr>
   </table>
 </details>
+
 
 [![Gamemode Showcase](Gamemode Showcase)](https://github.com/user-attachments/assets/0f0126c6-9abb-4106-9d1e-6748444b00e8)
 

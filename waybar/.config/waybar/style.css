@@ -146,3 +146,8 @@ window#waybar {
     50% { opacity: 0.4; }
     100% { opacity: 1; }
 }
+
+#custom-webcam.active {
+    color: #a6adc8;
+    padding: 0 4px;
+}

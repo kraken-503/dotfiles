@@ -13,8 +13,11 @@ RowLayout {
         delegate: MouseArea {
             id: ma
             required property SystemTrayItem modelData
-            Layout.preferredWidth: 16
-            Layout.preferredHeight: 16
+
+            visible: modelData.id !== "nm-applet"
+            Layout.preferredWidth: visible ? 16 : 0
+            Layout.preferredHeight: visible ? 16 : 0
+
             acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
 
             function openMenu() {
@@ -24,11 +27,16 @@ RowLayout {
 
             onClicked: m => {
                 if (m.button === Qt.MiddleButton) modelData.secondaryActivate();
-                else if (m.button === Qt.RightButton || modelData.onlyMenu) { if (modelData.hasMenu) openMenu(); }
+                else if (m.button === Qt.RightButton || modelData.onlyMenu) {
+                    if (modelData.hasMenu) openMenu();
+                }
                 else modelData.activate();
             }
 
-            IconImage { anchors.fill: parent; source: ma.modelData.icon }
+            IconImage {
+                anchors.fill: parent
+                source: ma.modelData.icon
+            }
         }
     }
 }

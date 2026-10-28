@@ -70,6 +70,7 @@ PanelWindow {
             Backlight {}
             Volume {}
             Battery {}
+            Tray {}
             IconButton {            // control center; icon/colors come from NetStyle.qml
                 icon: NetStyle.current.icon
                 tint: NetStyle.current.color

@@ -1,0 +1,6 @@
+# Quickshell writes this for the QML language server; it is machine specific
+.qmlls.ini
+# Python caches and one-time backups made by the setup scripts
+__pycache__/
+*.qs-backup
+*.pyc

@@ -36,3 +36,5 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 --wayland
 hl.env("WAYLAND_DISPLAY","wayland-0")
 
+--icon theme
+hl.env("QS_ICON_THEME", "yet-another-monochrome-icon-set")

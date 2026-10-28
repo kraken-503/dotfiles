@@ -67,6 +67,13 @@ hl.layer_rule({
     ignore_alpha= 0.5,
 })
 
+-- the wallpaper picker and music player animates
+hl.layer_rule({
+    name  = "quickshell-morph",
+    match = { namespace = "^quickshell-(wallpapers|music)$" },
+    no_anim = true,
+})
+
 --hl.on("window.floating", function(event)
  -- if event.floating == true and event.window.class == "mpv" then
  --   hl.dispatch("resizewindowpixel", "exact 1280 720, address:" .. event.window.address)

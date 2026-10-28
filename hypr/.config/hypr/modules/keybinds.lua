@@ -6,24 +6,29 @@
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "nemo"
-local menu        = "~/.config/rofi/launcher.sh"
+
+--calling a qs action
+local function qs(call) return hl.dsp.exec_cmd("qs -c bar ipc call bar " .. call) end
 
 ---- KEYBINDINGS ----
 ---------------------
 
 local mainMod = "SUPER" 
 
+--qs implementations
+hl.bind(mainMod .. " + W", qs("toggleWallpapers"))
+hl.bind(mainMod .. " + D", qs("toggleLauncher"))
+hl.bind(mainMod .. " + T", qs("toggleTheme"))
+
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zen-browser"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("brave"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("matuwall --toggle"))
  
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
@@ -63,14 +68,14 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 -- Volume
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd("swayosd-client --output-volume  mute-toggle"),     { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("swayosd-client --output-volume -1"), { locked = true, repeating = true })
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("swayosd-client --output-volume +1"), { locked = true, repeating = true })
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%-"), { locked = true, repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+"), { locked = true, repeating = true })
 hl.bind("XF86Launch6", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
 
 --Brightnes/Backlight
-hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("swayosd-client --brightness -1"),                  { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessUp",hl.dsp.exec_cmd("swayosd-client --brightness +1"),                  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl set 1%-"),                  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp",hl.dsp.exec_cmd("brightnessctl set 1%+"),                  { locked = true, repeating = true })
 
 -- Requires playerctl
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })
@@ -83,6 +88,9 @@ hl.bind("XF86Launch7",  hl.dsp.exec_cmd("DAMX"))
 
 --Amberol
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("amberol"))
+
+--Obsidian
+hl.bind(mainMod .. " + O", hl.dsp.exec_cmd("obsidian"))
 
 -- Waybar Reload
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("pkill -9 waybar && waybar &"))

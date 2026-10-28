@@ -38,7 +38,7 @@ Includes a fully functional theme switcher that seamlessly propagates color sche
 
 | Theme switcher |
 | :---: |
-| <img src="https://github.com/user-attachments/assets/3a9e062a-db70-4c5e-9f6a-823fc1d5413b" alt="Desktop Preview" width="800"> |
+| <img width="800" alt="output-theme-switcher" src="https://github.com/user-attachments/assets/bb8014ae-e49c-4974-87b6-80a88d914103" /> |
 
 <br><br>
 
@@ -47,43 +47,25 @@ Includes a fully functional theme switcher that seamlessly propagates color sche
 Centered right on the Quickshell bar is a custom, interactive pill-shaped dynamic island inspired by modern mobile UI design. It adapts seamlessly to your desktop activity:
 * **Idle State:** Displays the current time accompanied by a smooth, live-updating analog clock face.
 * **Media State:** Automatically detects active playback and fluidly expands into a rich media player complete with track details and a real-time audio visualizer.
+* **Hover State:** Shows calender.
 
 | Dynamic Island Showcase |
 | :---: |
-| <img src="https://github.com/user-attachments/assets/3a9e062a-db70-4c5e-9f6a-823fc1d5413b" alt="Quickshell Dynamic Island Preview" width="800"> |
+| <img width="800" alt="dynamic island" src="https://github.com/user-attachments/assets/662cb24f-d155-44f6-a2f1-b0cc25834032" /> |
 
 
 <br><br>
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=+JetBrains+Mono&weight=300&size=30&duration=1&color=8D65F7&multiline=true&repeat=false&width=294&height=80&lines=Gallery" alt="Typing SVG" /></a>
-<br>
+### <i>Interactive Wallpaper Switcher</i>
+Built directly into the Quickshell environment, this widget lets you browse and switch your desktop backgrounds on the fly. 
+* **Seamless `awww` Integration:** Blazingly fast wallpaper switching powered natively by the `awww` daemon.
+* **Instant Visual Preview:** Displays thumbnails or a quick selection menu right from your bar or shell overlay.
 
-<details>
-<summary><b>View Gallery</b></summary>
-<br>
-  
-  <table align="center">
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/572ccaa9-2731-49f6-9ac0-8857cf4cf95b" width="660" alt="Screen 1"></td>
-    </tr>      
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/0c877fc8-49bd-4b71-9eeb-9161401c0ded" width="660" alt="Screen 2"></td>
-    </tr>
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/a5686f5d-794e-4dd1-82f5-931e6d7b0fd0" width="660" alt="Screen 3"></td>
-    </tr> 
-        <tr>
-      <td><img src="https://github.com/user-attachments/assets/be15d549-65e4-4e1e-ab9b-d0f3e74e5cf2" width="660" alt="Screen 4"></td>
-    </tr>
-    <tr>
-      <td><img src="https://github.com/user-attachments/assets/5ca58b70-dee1-4f0b-b837-8761aa014695" width="660" alt="Screen 5"></td>
-    </tr>
-  </table>
-</details>
-
-
-[![Gamemode Showcase](Gamemode Showcase)](https://github.com/user-attachments/assets/0f0126c6-9abb-4106-9d1e-6748444b00e8)
+| Wallpaper Switcher Showcase |
+| :---: |
+| <img width="800"  alt="output-wall-switcher" src="https://github.com/user-attachments/assets/3b1661a7-b81e-4ee9-9746-add6f8551f90" /> |
 
 <br><br>
+
 ## Dependencies
 
 ```bash

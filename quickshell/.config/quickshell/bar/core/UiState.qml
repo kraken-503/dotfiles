@@ -5,6 +5,7 @@ import Quickshell.Hyprland
 
 Singleton {
     property bool ccOpen: false
+    property var notificationWindow: null
     property bool wpOpen: false
     property bool musicOpen: false
     property bool themeOpen: false

@@ -24,7 +24,9 @@ PanelWindow {
     WlrLayershell.keyboardFocus: UiState.ccOpen ? WlrKeyboardFocus.OnDemand : WlrKeyboardFocus.None
 
     HyprlandFocusGrab {
-        windows: [win]
+        // The notification window must be whitelisted too: while a grab is active, Hyprland keeps pointer focus
+        // on a whitelisted surface, so clicks on a non-whitelisted notification land on the tiles underneath it.
+        windows: UiState.notificationWindow ? [win, UiState.notificationWindow] : [win]
         active: UiState.ccOpen
         onCleared: UiState.closeCc()
     }

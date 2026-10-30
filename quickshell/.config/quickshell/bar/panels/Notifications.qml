@@ -89,6 +89,7 @@ Scope {
     }
 
     PanelWindow {
+        id: notifWindow
         screen: UiState.focusedScreen                // follow = mouse / focus
         visible: root.shownItems.length > 0
         anchors { top: true; right: true }
@@ -100,6 +101,10 @@ Scope {
         mask: Region { item: col }
         WlrLayershell.layer: WlrLayer.Overlay
         WlrLayershell.namespace: "quickshell-notifications"
+
+        // panels with a HyprlandFocusGrab whitelist this window (see UiState.notificationWindow)
+        Component.onCompleted: UiState.notificationWindow = notifWindow
+        Component.onDestruction: if (UiState.notificationWindow === notifWindow) UiState.notificationWindow = null
 
         ColumnLayout {
             id: col

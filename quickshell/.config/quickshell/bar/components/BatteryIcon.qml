@@ -1,8 +1,6 @@
 import QtQuick
 import QtQuick.Shapes
 
-// Minimal vertical battery: a slim pill that fills from the bottom (green / yellow / red), no outline.
-// A small bolt sits next to it while charging. Pure QtQuick: colors are properties.
 Item {
     id: root
 
@@ -10,7 +8,6 @@ Item {
     property bool charging: false
     property bool blinkWhenCritical: true
 
-    // thresholds: red at or below lowAt, yellow at or below midAt, green above
     property real lowAt: 20
     property real midAt: 50
     property real criticalAt: 10            // blink below this (not while charging)
@@ -30,7 +27,7 @@ Item {
     property real bodyHeight: 15
     readonly property real nubWidth: 0
     readonly property real nubHeight: 0
-    readonly property real boltWidth: 7
+    readonly property real boltWidth: 6
     property real boltSlot: (boltPlacement === "beside" && charging) ? boltWidth + 4 : 0
 
     implicitWidth: boltSlot + bodyWidth
@@ -41,8 +38,8 @@ Item {
     Shape {
         x: 0
         anchors.verticalCenter: parent.verticalCenter
-        width: root.boltWidth
-        height: 11
+        width: 3
+        height: 14
         opacity: root.boltSlot > 0 ? 1 : 0
         Behavior on opacity { NumberAnimation { duration: 200 } }
         preferredRendererType: Shape.GeometryRenderer

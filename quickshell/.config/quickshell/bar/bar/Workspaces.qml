@@ -9,7 +9,7 @@ Pill {
     radius: 18
     hPad: 8
 
-    readonly property var icons: ["󰬺", "󰬻", "󰬼", "󰬽", "󰬾", "󰬿", "󰭀", "󰭁", "󰭂"]
+    readonly property var icons: ["󱂈", "󱂉", "󱂊", "󱂋", "󱂌", "󱂍", "󱂎", "󱂏", "󱂐"]
 
     readonly property var ids: {
         const s = [1, 2, 3];

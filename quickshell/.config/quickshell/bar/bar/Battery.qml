@@ -4,17 +4,13 @@ import Quickshell.Services.UPower
 import "../components"
 import "../core"
 
-// Minimal vertical battery: green / yellow / red fill, a bolt while charging, percentage next to it.
-// Click toggles the percentage between "62%" and the time left (or time to full).
 Item {
     id: root
 
-    // ── EDIT HERE ───────────────────────────────────────────────
     readonly property bool showPercent: true
     readonly property real lowAt: 20          // red at or below this percentage
     readonly property real midAt: 50          // yellow at or below this percentage, green above
     readonly property real criticalAt: 10     // fill blinks at or below this (not while charging)
-    // ────────────────────────────────────────────────────────────
 
     readonly property var dev: UPower.displayDevice
     readonly property int pct: Math.round(dev.percentage * 100)

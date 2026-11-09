@@ -8,8 +8,9 @@ Mechanisms (each one was checked against the app's docs or source):
   OBS       Yami variant theme (.ovt); live when [Appearance] AutoReload=true in user.ini.
   AyuGram   .tdesktop-theme colors file; Telegram Desktop watches the loaded theme file (QFileSystemWatcher).
   Brave     BrowserThemeColor policy + `brave --refresh-platform-policy` (needs setup_apps.py --brave once).
+  NvChad    state file read by chadrc.lua + NvChad's own reload_theme() sent to every running Neovim.
 """
-import colorsys, json, os, pathlib, re, shutil, subprocess, sys
+import colorsys, glob, json, os, pathlib, re, shutil, stat, subprocess, sys
 
 HOME = pathlib.Path(os.environ.get("HOME", "~")).expanduser()
 HERE = pathlib.Path(__file__).resolve().parent
@@ -178,11 +179,64 @@ def brave(p, opts):
                          stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, start_new_session=True)
     return "brave: policy updated" + (" and refreshed" if exe and running else "")
 
+# ── NvChad ─────────────────────────────────────────────────────────────
+# Switcher theme -> base46 theme name. base46 has no plain "dracula": chadracula is the closest
+# (chadracula-evondev is the other variant). Edit freely; names must exist in base46/themes.
+NVCHAD_THEMES = {
+    "Catppuccin": "catppuccin", "Tokyo Night": "tokyonight", "Nord": "nord", "Gruvbox": "gruvbox",
+    "Dracula": "chadracula", "Rosé Pine": "rosepine", "Everforest": "everforest",
+}
+NVCHAD_FALLBACK = "tokyonight"      # only for the log line; chadrc.lua keeps its own default
+
+def nvchad(p, opts):
+    cfg_home = pathlib.Path(os.environ.get("XDG_CONFIG_HOME") or HOME / ".config")
+    name = NVCHAD_THEMES.get(opts["name"])
+    if not name:
+        return f"nvchad: no mapping for '{opts['name']}' (edit NVCHAD_THEMES in tools/export_apps.py)"
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", name):
+        return "nvchad: refusing odd theme name"
+    if not (cfg_home / "nvim" / "lua" / "chadrc.lua").exists():
+        return "nvchad: nvim/lua/chadrc.lua not found, skipped"
+    nvim = shutil.which("nvim")
+    if not nvim:
+        return "nvchad: nvim not found in PATH, skipped"
+    # 1) what chadrc.lua reads on the next start
+    write_inplace(HOME / ".cache" / "quickshell-bar" / "nvchad-theme", name + "\n")
+    # 2) running editors: use NvChad's own picker code path (it also recompiles base46's color cache)
+    lua = ("local ok, u = pcall(require, 'nvchad.themes.utils'); "
+           f"if ok and u.reload_theme then u.reload_theme('{name}') "
+           f"else require('nvconfig').base46.theme = '{name}'; require('base46').load_all_highlights() end")
+    expr = 'execute("lua ' + lua.replace('"', '\\"') + '")'
+    run_dir = os.environ.get("XDG_RUNTIME_DIR") or "/tmp"
+    socks = []
+    for path in glob.glob(os.path.join(run_dir, "nvim.*.*")):
+        try:
+            if stat.S_ISSOCK(os.stat(path).st_mode):
+                socks.append(path)
+        except OSError:
+            pass
+    ok = 0
+    for sock in socks:
+        try:
+            r = subprocess.run([nvim, "--server", sock, "--remote-expr", expr], capture_output=True, timeout=5)
+            ok += r.returncode == 0
+        except Exception:
+            pass
+    if ok:
+        return f"nvchad: {name}, reloaded {ok}/{len(socks)} running editor(s)"
+    # 3) nothing running: base46 only compiles its cache on plugin install/update, so compile it now
+    try:
+        r = subprocess.run([nvim, "--headless", "-c", "lua require('base46').load_all_highlights()", "-c", "qa"],
+                           capture_output=True, timeout=40)
+        return f"nvchad: {name}, no running editor, cache compile {'ok' if r.returncode == 0 else 'FAILED'}"
+    except Exception as e:
+        return f"nvchad: {name}, cache compile failed ({e})"
+
 def main():
     data = json.loads(sys.argv[1])
     p = dict(data["palette"]); p["termBg"] = data["termBg"]
     o = data.get("options", {}); o["name"] = data.get("name", "")
-    for key, fn in (("obsidian", obsidian), ("obs", obs), ("ayugram", ayugram), ("brave", brave)):
+    for key, fn in (("obsidian", obsidian), ("obs", obs), ("ayugram", ayugram), ("brave", brave), ("nvchad", nvchad)):
         if o.get(key, True):
             try:
                 print(fn(p, o))

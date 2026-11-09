@@ -48,5 +48,5 @@ Singleton {
 
 
     readonly property string font: "JetBrainsMono Nerd Font Propo"
-    readonly property int fontSize: 13
+    readonly property int fontSize: 12
 }

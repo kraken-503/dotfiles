@@ -131,7 +131,11 @@ alias signal-desktop="signal-desktop --enable-features=UseOzonePlatform --ozone-
 export POWERLEVEL9K_DISABLE_GITSTATUS=true
 
 nvim() {
-    kitty @ set-spacing padding=0 2>/dev/null
-    command nvim "$@"
-    kitty @ set-spacing padding=0 2>/dev/null
+    if [ -n "$KITTY_WINDOW_ID" ]; then
+        kitten @ set-background-opacity 1.0
+        command nvim "$@"
+        kitten @ set-background-opacity 0.66
+    else
+        command nvim "$@"
+    fi
 }

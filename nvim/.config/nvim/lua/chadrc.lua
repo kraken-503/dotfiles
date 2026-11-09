@@ -5,8 +5,18 @@
 ---@type ChadrcConfig
 local M = {}
 
+-- The Quickshell theme switcher writes the active NvChad theme name to this file
+-- (tools/export_apps.py). If it is missing or invalid, the default below is used.
+local function qs_theme(default)
+  local f = io.open((os.getenv "HOME" or "") .. "/.cache/quickshell-bar/nvchad-theme", "r")
+  if not f then return default end
+  local name = (f:read "*l" or ""):match "^%s*([%w_%-]+)%s*$"
+  f:close()
+  return name or default
+end
+
 M.base46 = {
-	theme = "tokyonight",
+	theme = qs_theme "tokyonight",
   transparency = false,
 
 	-- hl_override = {
